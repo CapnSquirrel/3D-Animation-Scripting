@@ -97,7 +97,7 @@ class IncSaveWin(object):
 
         pm.showWindow()
 
-    def find_save_path(self, *args):
+    def find_save_path(self):
         multiple_filters = "Maya Files (*.ma *.mb);;Maya ASCII (*.ma);;Maya Binary (*.mb);;All Files (*.*)"
         try:
             self.save_path = pm.fileDialog2(fileFilter=multiple_filters,
